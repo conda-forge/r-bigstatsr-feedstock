@@ -1,4 +1,4 @@
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bigstatsr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bigstatsr/bigstatsr_{{ version }}.tar.gz
-  sha256: 9135e29484afdf092b023f0f1b16dfa690d1c28b74e58ab5d05bbf106a2d84b0
+  sha256: fe39a44ecfae661c0a706c902065546413292ab18748f4c7397c38294648295b
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
