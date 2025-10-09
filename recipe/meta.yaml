@@ -12,7 +12,7 @@ source:
   sha256: fe39a44ecfae661c0a706c902065546413292ab18748f4c7397c38294648295b
 
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -64,6 +64,7 @@ requirements:
     - r-tibble
     - libblas
     - liblapack
+    - llvm-openmp  # [osx]
   run:
     - r-base
     - r-rspectra
@@ -77,6 +78,7 @@ requirements:
     - r-ps >=1.4
     - r-rmio >=0.4
     - r-tibble
+    - llvm-openmp  # [osx]
 
 test:
   commands:
